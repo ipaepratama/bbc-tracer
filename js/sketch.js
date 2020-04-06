@@ -235,6 +235,6 @@ function bfs() {
       loop();
     }
   } else {
-    alert("Start / End Node not Defined!!");
+    alert("Node asal/tujuan belum disetel!");
   }
 }
