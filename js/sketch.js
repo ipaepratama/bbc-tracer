@@ -16,7 +16,7 @@ function preload() {
   data = loadJSON("bali.json");
   img = loadImage("img/bali.png");
   noLoop();
-  createElement("h3", "Shortest BFS Path is:").parent("output");
+  createElement("h3", "Rute terpendek BFS yaitu:").parent("output");
 }
 
 function setup() {
@@ -176,13 +176,13 @@ function draw() {
     createElement("br").parent("output");
     createElement(
       "h4",
-      "1: " + path[path.length - 1].value + " (Source)"
+      "1: " + path[path.length - 1].value + " (Asal)"
     ).parent("output");
     for (var i = path.length - 2; i > 0; i--) {
       createElement("h4", j + ": " + path[i].value).parent("output");
       j++;
     }
-    createElement("h4", j++ + ": " + path[0].value + " (Destination)").parent(
+    createElement("h4", j++ + ": " + path[0].value + " (Tujuan)").parent(
       "output"
     );
     createElement("br").parent("output");
