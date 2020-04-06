@@ -1,0 +1,58 @@
+{
+  "cities": [
+    {
+      "name": "Badung",
+      "x": 1468,
+      "y": 777,
+      "connected": ["Tabanan", "Buleleng", "Bangli","Gianyar","Denpasar"]
+    },
+    {
+      "name": "Bangli",
+      "x": 1743,
+      "y": 805,
+      "connected": ["Buleleng", "Badung", "Gianyar", "Klungkung", "Karangasem"]
+    },
+    {
+      "name": "Buleleng",
+      "x": 1291,
+      "y": 205,
+      "connected": ["Jembrana", "Tabanan", "Badung", "Bangli", "Karangasem"]
+    },
+    {
+      "name": "Gianyar",
+      "x": 1690,
+      "y": 955,
+      "connected": ["Denpasar", "Badung", "Bangli", "Klungkung"]
+    },
+    {
+      "name": "Jembrana",
+      "x": 439,
+      "y": 627,
+      "connected": ["Buleleng", "Tabanan"]
+    },
+    {
+      "name": "Karangasem",
+      "x": 2191,
+      "y": 799,
+      "connected": ["Buleleng", "Bangli", "Klungkung"]
+    },
+    {
+      "name": "Klungkung",
+      "x": 1927,
+      "y": 942,
+      "connected": ["Gianyar", "Bangli", "Karangasem"]
+    },
+    {
+      "name": "Tabanan",
+      "x": 1318,
+      "y": 954,
+      "connected": ["Jembrana", "Buleleng", "Badung"]
+    },
+    {
+      "name": "Denpasar",
+      "x": 1480,
+      "y": 1197,
+      "connected": ["Badung", "Gianyar"]
+    }
+  ]
+}
