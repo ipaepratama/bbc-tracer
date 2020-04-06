@@ -2,6 +2,7 @@ Bali BFS Covid19 (BBC) Tracer adalah aplikasi berbasis web untuk melacak penyeba
 
 Pengembang :
 I Putu Agus Eka Pratama, ST MT
+dan
 Gusti Bagus Dwi Anugrah Harimurti
 Prodi Teknologi Informasi, Fakultas Teknik, Universitas Udayana.
 
