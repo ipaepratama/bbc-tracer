@@ -186,7 +186,7 @@ function draw() {
       "output"
     );
     createElement("br").parent("output");
-    createElement("h5", "No of node(s) generated: " + (m + 1)).parent("output");
+    createElement("h5", "Jumlah node yang terbentuk sebanyak " + (m + 1)).parent("output");
     noLoop();
   }
 }
