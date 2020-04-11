@@ -8,12 +8,12 @@ var isStart = false;
 var isEnd = false;
 
 const scaleFactor = 0.4;
-const circleSize = 78;
+const circleSize = 20;
 const circleCursorSize = 36;
-const lineWeight = 16;
+const lineWeight = 8;
 
 function preload() {
-  data = loadJSON("bali.json");
+  data = dataKecamatan;
   img = loadImage("img/bali.png");
   noLoop();
   createElement("h3", "Rute terpendek BFS yaitu:").parent("output");
@@ -23,13 +23,17 @@ function setup() {
   graph = new Graph();
   var canvas = createCanvas(2544 * scaleFactor, 1578 * scaleFactor);
   canvas.parent("sketch-holder");
-  var cities = data.cities;
+  updateConnectionDatasets();
+}
+
+function updateConnectionDatasets() {
+  let cities = data.cities;
 
   for (var i = 0; i < cities.length; i++) {
     var node = cities[i];
     var name = node.name;
     console.log(name);
-    
+
     var neighbor = node.connected;
 
     var cityNode = graph.getNode(name);
@@ -65,9 +69,9 @@ function preDraw() {
   scale(1, 1);
 
   // Connecting Edges in Map
-  data.cities.forEach(n => {
-    n.connected.forEach(e => {
-      data.cities.forEach(next => {
+  data.cities.forEach((n) => {
+    n.connected.forEach((e) => {
+      data.cities.forEach((next) => {
         if (next.name === e) {
           stroke(0, 0, 0, 150);
           strokeWeight(lineWeight);
@@ -158,7 +162,7 @@ function draw() {
   }
 
   if (completed) {
-    path.forEach(p => {
+    path.forEach((p) => {
       var px = p.x;
       var py = p.y;
       var cx = p.x;
@@ -174,10 +178,9 @@ function draw() {
     var j = 2;
     //Render at DOM
     createElement("br").parent("output");
-    createElement(
-      "h4",
-      "1: " + path[path.length - 1].value + " (Asal)"
-    ).parent("output");
+    createElement("h4", "1: " + path[path.length - 1].value + " (Asal)").parent(
+      "output"
+    );
     for (var i = path.length - 2; i > 0; i--) {
       createElement("h4", j + ": " + path[i].value).parent("output");
       j++;
@@ -186,7 +189,10 @@ function draw() {
       "output"
     );
     createElement("br").parent("output");
-    createElement("h5", "Jumlah node yang terbentuk sebanyak " + (m + 1)).parent("output");
+    createElement(
+      "h5",
+      "Jumlah node yang terbentuk sebanyak " + (m + 1)
+    ).parent("output");
     noLoop();
   }
 }

@@ -18,11 +18,13 @@ Graph.prototype.getNode = function (name) {
 
 Graph.prototype.setStart = function (name) {
     this.start = this.graph[name];
+    console.log("Start: " + name);
     return this.start;
 }
 
 Graph.prototype.setEnd = function (name) {
     this.end = this.graph[name];
+    console.log("End: " + name);
     return this.end;
 }
 
