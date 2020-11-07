@@ -32,6 +32,10 @@ let dataKecamatan = {
         "Sukawati",
       ],
     },
+    
+    
+    
+    
     // Tabanan
     {
       name: "Baturiti",
@@ -101,6 +105,11 @@ let dataKecamatan = {
       y: 931,
       connected: [],
     },
+    
+    
+    
+    
+    
     // Klungkung
     {
       name: "Banjarangkan",
@@ -126,6 +135,11 @@ let dataKecamatan = {
       y: 1299,
       connected: ["Denpasar Selatan", "Dawan", "Manggis"],
     },
+    
+    
+    
+    
+    
     // Karangasem
     {
       name: "Abang",
@@ -191,6 +205,11 @@ let dataKecamatan = {
         "Bangli",
       ],
     },
+    
+    
+    
+    
+    
     // Jembrana
     {
       name: "Jembrana",
@@ -222,6 +241,11 @@ let dataKecamatan = {
       y: 721,
       connected: ["Gerokgak", "Mendoyo"],
     },
+    
+    
+    
+    
+    
     // Gianyar
     {
       name: "Blahbatuh",
@@ -273,6 +297,11 @@ let dataKecamatan = {
       y: 854,
       connected: [],
     },
+    
+    
+    
+    
+    
     // Buleleng
     {
       name: "Banjar",
@@ -342,6 +371,11 @@ let dataKecamatan = {
       y: 217,
       connected: [],
     },
+    
+    
+    
+    
+    
     // Bangli
     {
       name: "Bangli",
@@ -375,6 +409,11 @@ let dataKecamatan = {
       y: 695,
       connected: [],
     },
+    
+    
+    
+    
+    
     // Badung
     {
       name: "Abiansemal",

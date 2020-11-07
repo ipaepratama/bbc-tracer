@@ -12,12 +12,17 @@ const circleSize = 20;
 const circleCursorSize = 36;
 const lineWeight = 8;
 
+
+
 function preload() {
   data = dataKecamatan;
   img = loadImage("img/bali.png");
   noLoop();
-  createElement("h3", "Rute terpendek BFS yaitu:").parent("output");
+  createElement("h4", "Rute terpendek yang dilalui:").parent("output");
 }
+
+
+
 
 function setup() {
   graph = new Graph();
@@ -178,20 +183,20 @@ function draw() {
     var j = 2;
     //Render at DOM
     createElement("br").parent("output");
-    createElement("h4", "1: " + path[path.length - 1].value + " (Asal)").parent(
+    createElement("h4", "1: " + path[path.length - 1].value + " (titik asal)").parent(
       "output"
     );
     for (var i = path.length - 2; i > 0; i--) {
       createElement("h4", j + ": " + path[i].value).parent("output");
       j++;
     }
-    createElement("h4", j++ + ": " + path[0].value + " (Tujuan)").parent(
+    createElement("h4", j++ + ": " + path[0].value + " (titik tujuan)").parent(
       "output"
     );
     createElement("br").parent("output");
     createElement(
       "h5",
-      "Jumlah node yang terbentuk sebanyak " + (m + 1)
+      "Jumlah titik yang dilewati sebanyak " + (m + 1)
     ).parent("output");
     noLoop();
   }
@@ -241,6 +246,6 @@ function bfs() {
       loop();
     }
   } else {
-    alert("Node asal/tujuan belum disetel!");
+    alert("Titik asal atau titik tujuan belum ditentukan. Silahkan diset terlebih dahulu.");
   }
 }
